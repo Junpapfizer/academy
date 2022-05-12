@@ -1,0 +1,203 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100&display=swap"); 
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100&family=Kanit:wght@100&display=swap');
+* {
+  box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    font-family: 'Kanit', sans-serif;
+  background: #eeeeee;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0 0 50px;
+}
+#grad1 {
+  background-image: linear-gradient(
+    to top,
+    rgba(153, 119, 221, 1),
+    rgba(0, 255, 223, 0.4)
+  );
+}
+
+h1 {
+  font-size: 30pt;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+}
+
+h2 {
+  font-size: 16pt;
+ color: #fff;
+ margin: 0 0;
+}
+
+
+.container {
+  background-color: #7e51fb7c;
+  border-radius: 50px;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.2), 0 10px 10px rgba(0, 0, 0, 0.2);
+  position: relative;
+  overflow: hidden;
+  width: 800px;
+  height: 850px;
+  padding: 0 100px ;
+
+ 
+}
+.form-container form {
+  display: flex;
+  /* flex-direction: column; */
+  padding: 0 40px;
+  height: 100%;
+  /* justify-content: center; */
+  align-items: center;
+  text-align: center;
+}
+
+.form-container input {
+  border-radius: 15px;
+  background: #eee;
+  border: none;
+  padding: 12px 15px;
+  margin: 10px 20px;
+  width: 40%;
+}
+.form-containers input {
+  border-radius: 15px;
+  background: #eee;
+  border: none;
+  padding: 12px 15px;
+  /* margin: 10px 20px; */
+  width: auto;
+}
+.form-container {
+  /* position: absolute; */
+  top: 0;
+  height: 100%;
+  transition: all 0.6s ease-in-out;
+}
+button {
+  border-radius: 20px;
+  border: 1px solid #7e51fb;
+  background: #7e51fb;
+  color: #fff;
+  font-size: 12px;
+  font-weight: bold;    
+  margin: 30px 200px;
+  margin-bottom: 50px;
+  padding: 12px 45px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: transform 80ms ease-in;
+  cursor: pointer;
+  align-items: center;
+}
+
+/*? Birth Day css */
+input[type="date"]:before {
+    content: attr(placeholder) !important;
+    color: #aaa;
+    margin-right: 6px;
+  }
+  input[type="date"]:focus:before,
+  input[type="date"]:valid:before {
+    content: "";
+  }
+
+ /*? form size jacket */
+  .form-control{  
+    width: auto;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 10px;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  }
+
+  .form-group{
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 30px;
+  }
+
+  .boxfix{
+    display: flex;
+    column-gap: 1.5rem;
+    float: right;
+  }
+  .boxfix1{
+    display: flex;
+    column-gap: 1.5rem;
+    float: left;
+  }
+  /* ? upload image css */
+
+  .avatar-upload {
+    position: relative;
+    max-width: 205px;
+    margin: 20px auto;
+  }
+  .avatar-upload .avatar-edit {
+    position: absolute;
+    right: 12px;
+    z-index: 1;
+    top: 10px;
+  }
+  .avatar-upload .avatar-edit input {
+    display: none;
+  }
+  .avatar-upload .avatar-edit input + label {
+    display: inline-block;
+    width: 34px;
+    height: 34px;
+    margin-bottom: 0;
+    border-radius: 100%;
+    background: #FFFFFF;
+    border: 1px solid transparent;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.12);
+    cursor: pointer;
+    font-weight: normal;
+    transition: all 0.2s ease-in-out;
+  }
+  .avatar-upload .avatar-edit input + label:hover {
+    background: #f1f1f1;
+    border-color: #d6d6d6;
+  }
+  .avatar-upload .avatar-edit input + label:after {
+    content: "\f1c5";
+    font-family: 'FontAwesome';
+    color: #0e07db;
+    position: absolute;
+    top: 8px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    margin: auto;
+  }
+  .avatar-upload .avatar-preview {
+    width: 180px;
+    height: 180px;
+    position: relative;
+    border-radius: 100%;
+    border: 6px solid #f7f7f7;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1);
+  }
+  .avatar-upload .avatar-preview > div {
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
